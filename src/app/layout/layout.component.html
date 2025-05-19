@@ -1,0 +1,48 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+<!-- <app-footer></app-footer> -->
+
+
+<!-- on idle -->
+<!-- @defer{
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
+
+
+<!-- on viewport -->
+@defer(on viewport){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+}
+
+
+<!-- on interaction -->
+<!-- @defer (on interaction){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
+
+<!-- on hover -->
+<!-- @defer (on hover){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
+
+<!-- on immediate -->
+<!-- @defer (on immediate){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
+
+<!-- on timer -->
+<!-- @defer (on timer(500ms)){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
