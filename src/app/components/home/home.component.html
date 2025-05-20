@@ -1,9 +1,15 @@
 <app-about></app-about>
 <!-- <app-services></app-services> -->
-@defer{
+
+
+<!-- @defer{
 <app-services></app-services>
 } @placeholder {
   <div class="box">Loading...</div>
-}
+} -->
 
-  
+@defer{
+<app-services></app-services>
+} @loading (minimum 4s) {
+  <app-spinner></app-spinner>
+}

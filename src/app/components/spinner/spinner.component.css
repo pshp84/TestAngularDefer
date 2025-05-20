@@ -1,0 +1,27 @@
+.spinner-box{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.spinner{
+    height: 30px;
+    width: 30px;
+    border-top: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 50%;
+    animation-name: round;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: auto auto;
+}
+
+@keyframes round{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}

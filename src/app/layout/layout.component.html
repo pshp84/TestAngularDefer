@@ -6,17 +6,24 @@
 <!-- on idle -->
 <!-- @defer{
 <app-footer></app-footer>
-} @placeholder {
+} @placeholder (minimum 4s) {
   <div class="box">Loading...</div>
 } -->
 
-
-<!-- on viewport -->
-@defer(on viewport){
+<!-- on idle -->
+@defer{
 <app-footer></app-footer>
 } @placeholder {
   <div class="box">Loading...</div>
 }
+
+
+<!-- on viewport -->
+<!-- @defer(on viewport){
+<app-footer></app-footer>
+} @placeholder {
+  <div class="box">Loading...</div>
+} -->
 
 
 <!-- on interaction -->
@@ -53,4 +60,24 @@
 <app-footer></app-footer>
 } @placeholder {
   <div class="box">Loading...</div>
+} -->
+
+<!-- @defer{
+<app-footer></app-footer>
+} @error {
+  <div class="box">Error Occured...</div>
+} -->
+
+
+<!-- @defer{
+<app-footer></app-footer>
+} @loading {
+  <div class="box">Loading...</div>
+} -->
+
+
+<!-- @defer{
+<app-footer></app-footer>
+} @loading (after 1s; minimum 2s) {
+  <app-spinner></app-spinner>
 } -->
